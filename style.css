@@ -303,7 +303,7 @@ body.menu-expanded button path {
   content: '';
   width: 100%;
   height: calc(76% + var(--nav-height));
-  background: var(--brand-light);
+  background-color: var(--brand-light);
   display: block;
 
   position: absolute;
