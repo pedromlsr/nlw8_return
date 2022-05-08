@@ -7,7 +7,7 @@
 }
 
 :root {
-  --hue: 180;
+  --hue: 75;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -717,7 +717,7 @@ footer .social-links {
   /* === ABOUT === */
 
   #about .wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 48rem 1fr;
     grid-template-areas: 'B A';
     gap: 6.7rem;
   }

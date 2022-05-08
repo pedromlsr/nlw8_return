@@ -18,18 +18,19 @@ function activateMenuAtCurrentSection(section) {
   // quais dados vou precisar?
   const sectionTop = section.offsetTop
   const sectionHeight = section.offsetHeight
-  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop
+  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
 
   // verificar se a base está abaixo da linha alvo
+
   const sectionEndsAt = sectionTop + sectionHeight
-  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine
+  const sectionEndPassedTargetline = sectionEndsAt <= targetLine
 
   // limites da seção
   const sectionBoundaries =
-    sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine
+    sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline
 
   const sectionId = section.getAttribute('id')
-  const menuElement = document.querySelector(`.menu a [href*=${sectionId}]`)
+  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
 
   menuElement.classList.remove('active')
   if (sectionBoundaries) {
@@ -74,5 +75,4 @@ ScrollReveal({
 #services .card,
 #about,
 #about header,
-#about .content
-`)
+#about .content`)
